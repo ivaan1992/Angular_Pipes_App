@@ -12,6 +12,4 @@ export class AppComponent {
     console.log( this.name );
   }
 
-
-
 }
