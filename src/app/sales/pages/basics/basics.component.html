@@ -12,20 +12,29 @@
 <div class="grid">
 
   <div class="col-4">
-    <p-card header="uppercase">
-      First Card
+    <p-card header="uppercase"
+            subheader= "The text in this card should use uppercase pipe">
+      {{ nameLower }}
+      <br>
+      {{ nameLower | uppercase }}
     </p-card>
   </div>
 
   <div class="col-4">
-    <p-card>
-      Second Card
+    <p-card header="lowercase"
+            subheader= "The text in this card should use lowercase pipe">
+      {{ nameUpper }}
+      <br>
+      {{ nameUpper | lowercase }}
     </p-card>
   </div>
 
   <div class="col-4">
-    <p-card>
-      Third Card
+    <p-card header="titlecase"
+            subheader= "The text in this card should use titlecase pipe">
+      {{ nameComplete }}
+      <br>
+      {{ nameComplete | titlecase }}
     </p-card>
   </div>
 
