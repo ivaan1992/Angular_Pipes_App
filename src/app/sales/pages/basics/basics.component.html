@@ -1,1 +1,100 @@
-<p>basics works!</p>
+
+<div>
+
+  <h1>Basic Pipes</h1>
+
+  <p>
+    These are some pipes that are included in Angular - usually in Common Module.
+  </p>
+
+</div>
+
+<div class="grid">
+
+  <div class="col-4">
+    <p-card header="uppercase"
+            subheader= "The text in this card should use uppercase pipe">
+      {{ nameLower }}
+      <br>
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+
+  <div class="col-4">
+    <p-card header="lowercase"
+            subheader= "The text in this card should use lowercase pipe">
+      {{ nameUpper }}
+      <br>
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+
+  <div class="col-4">
+    <p-card header="titlecase"
+            subheader= "The text in this card should use titlecase pipe">
+      {{ nameComplete }}
+      <br>
+      {{ nameComplete | titlecase }}
+    </p-card>
+  </div>
+
+</div>
+
+<br>
+
+<div>
+
+  <h1>Date | Fecha | Pipe</h1>
+
+  <p>
+    This pipe is used to show dates.
+  </p>
+
+</div>
+
+
+<div class="grid">
+
+  <div class="col-6">
+    <p-card >
+      <ul>
+        <li>date</li>
+        <li>date | date </li>
+        <li>date | date: 'short'</li>
+        <li>date | date: 'medium'</li>
+        <li>date | date: 'MMMM DD, YYYY'</li>
+      </ul>
+
+      <hr>
+      <ul>
+        <li>date | date:'long': spanish</li>
+        <li>date | date:'long': french</li>
+      </ul>
+
+    </p-card>
+
+
+
+  </div>
+
+  <div class="col-6">
+    <p-card >
+      <ul>
+        <li>{{ date }}</li>
+        <li>{{ date | date }}</li>
+        <li>{{ date | date:'short' }}</li>
+        <li>{{ date | date:'medium' }}</li>
+        <li>{{ date | date: 'MMMM dd, YYYY'  }}</li>
+      </ul>
+
+      <hr>
+      <ul>
+        <li>{{ date | date:'long': 'GMT-10' : 'es' }}</li>
+        <li>{{ date | date:'long': 'GMT-10' : 'fr' }}</li>
+      </ul>
+    </p-card>
+  </div>
+
+
+
+</div>

@@ -6,10 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  name: string = 'ivAN gAonA ';
 
-  showName() {
-    console.log( this.name );
-  }
 
 }
