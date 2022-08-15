@@ -10,4 +10,6 @@ export class BasicsComponent {
   nameUpper   : string = 'IVAN';
   nameComplete: string = 'isMaEl IvaN LinArEs gaOna';
 
+  date: Date = new Date();
+
 }
