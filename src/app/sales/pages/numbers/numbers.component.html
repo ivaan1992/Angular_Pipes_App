@@ -1,1 +1,37 @@
-<p>numbers works!</p>
+<div>
+
+  <h1>Number Pipes</h1>
+  <p>
+    These are pipes that we used for numbers and are included in Angular.
+  </p>
+
+</div>
+
+<div class="grid">
+
+  <div class="col-4">
+    <p-card header="Net Sales"
+            subheader="For this year">
+      <i class="pi pi-euro"></i>
+      {{ netSales | number:'1.2-2'}}
+    </p-card>
+  </div>
+
+
+  <div class="col-4">
+    <p-card header="Gross Sales"
+            subheader="For this year">
+      {{ (netSales + 50000000) | currency:'EUR':'symbol-narrow' : '1.2-2'}}
+    </p-card>
+  </div>
+
+  <div class="col-4">
+    <p-card header="Gain Percentage"
+            subheader="For this year">
+      {{ percentage | percent: '1.2-2' }}
+    </p-card>
+  </div>
+
+</div>
+
+
