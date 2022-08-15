@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from './shared/shared.module';
 
@@ -6,8 +6,12 @@ import { AppComponent } from './app.component';
 import { AppRouterModule } from './app-router.module';
 import { SalesModule } from './sales/sales.module';
 
-
-
+// Change language
+import localesEs from '@angular/common/locales/es';
+import localesFr from '@angular/common/locales/fr';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData( localesEs );
+registerLocaleData( localesFr );
 
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ import { SalesModule } from './sales/sales.module';
     SharedModule,
     SalesModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'es' } // change language
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

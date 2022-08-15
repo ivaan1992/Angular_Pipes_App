@@ -64,7 +64,17 @@
         <li>date | date: 'medium'</li>
         <li>date | date: 'MMMM DD, YYYY'</li>
       </ul>
+
+      <hr>
+      <ul>
+        <li>date | date:'long': spanish</li>
+        <li>date | date:'long': french</li>
+      </ul>
+
     </p-card>
+
+
+
   </div>
 
   <div class="col-6">
@@ -75,6 +85,12 @@
         <li>{{ date | date:'short' }}</li>
         <li>{{ date | date:'medium' }}</li>
         <li>{{ date | date: 'MMMM dd, YYYY'  }}</li>
+      </ul>
+
+      <hr>
+      <ul>
+        <li>{{ date | date:'long': 'GMT-10' : 'es' }}</li>
+        <li>{{ date | date:'long': 'GMT-10' : 'fr' }}</li>
       </ul>
     </p-card>
   </div>
