@@ -1,5 +1,6 @@
-import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ registerLocaleData( localesFr );
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRouterModule,
     SharedModule,
     SalesModule
