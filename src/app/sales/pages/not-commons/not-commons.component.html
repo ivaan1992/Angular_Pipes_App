@@ -64,4 +64,18 @@
 
   </div>
 
+  <div class="col">
+
+    <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+
+      <ul>
+        <li *ngFor="let char of person | keyvalue">
+           <b> {{ char.key | titlecase }} :</b>  {{ char.value }}
+        </li>
+      </ul>
+
+    </p-fieldset>
+
+  </div>
+
 </div>

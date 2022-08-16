@@ -34,4 +34,13 @@ export class NotCommonsComponent {
   deleteClient() {
     this.clients.shift()
   }
+
+  // KeyValue Pipe
+
+  person = {
+    name: 'Ismael Ivan',
+    age: 30,
+    job: 'Software Developer',
+    location: 'Puebla, Mex.'
+  }
 }
