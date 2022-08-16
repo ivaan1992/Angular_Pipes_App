@@ -1,1 +1,102 @@
-<p>not-commons works!</p>
+<div>
+
+  <h1>Not Common Pipes</h1>
+  <p>
+    These are pipes that are not very used and are included in Angular.
+  </p>
+  <p>
+    The pipes are: i18nselectpipe & i18pluralpipe
+  </p>
+
+</div>
+
+
+<div class="grid">
+
+  <div class="col">
+
+    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+
+      <p>
+        Hola {{ name }}, nos es un placer {{ genre | i18nSelect:invitationMap }}.
+        Queremos decirle que estamos orgullosos de invitarte a nuestro
+        proximo evento de JavaScript.
+      </p>
+
+      <button pButton
+      type="button"
+      label="Change Client"
+      (click)="changeClient()">
+      </button>
+
+    </p-fieldset>
+
+  </div>
+
+  <div class="col">
+
+    <p-fieldset legend="i18Plural Pipe" [toggleable]="true">
+
+      <p>
+        {{ clients.length | i18nPlural:clientsMap }}
+      </p>
+
+      <button pButton
+      (click)="deleteClient()"
+      type="button"
+      class="p-button-danger"
+      label="Remove Client" ></button>
+
+    </p-fieldset>
+
+  </div>
+
+  <div class="col">
+
+    <p-fieldset legend="Slice Pipe" [toggleable]="true">
+
+        <b>
+          Original
+        </b>
+        <pre>{{ clients | slice:0}}</pre>
+
+    </p-fieldset>
+
+  </div>
+
+  <div class="col">
+
+    <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+
+      <ul>
+        <li *ngFor="let char of person | keyvalue">
+           <b> {{ char.key | titlecase }} :</b>  {{ char.value }}
+        </li>
+      </ul>
+
+    </p-fieldset>
+
+  </div>
+
+  <div class="col">
+
+    <p-fieldset legend="Json Pipe" [toggleable]="true">
+      {{ heroes | json }}
+    </p-fieldset>
+
+  </div>
+
+  <div class="p-col p-md-6">
+    <p-fieldset legend="Async Pipe" [toggleable]="true">
+
+        <pre *ngIf="!(myObservable | async)">Resolviendo observable</pre>
+        <pre>{{ myObservable | async }}</pre>
+
+        <pre *ngIf="!(valorPromesa | async)">Resolviendo promesa</pre>
+        <pre>{{ valorPromesa | async }}</pre>
+
+    </p-fieldset>
+</div>
+
+
+</div>
