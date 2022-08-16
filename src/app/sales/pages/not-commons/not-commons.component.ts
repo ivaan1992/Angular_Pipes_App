@@ -43,4 +43,29 @@ export class NotCommonsComponent {
     job: 'Software Developer',
     location: 'Puebla, Mex.'
   }
+
+  //Json Pipe
+
+  heroes = [
+    {
+      name: 'Spiderman',
+      fly: true
+    },
+    {
+      name: 'Superman',
+      fly: true
+    },
+    {
+      name: 'Batman',
+      fly: false
+    },
+    {
+      name: 'Robbin',
+      fly: false
+    },
+    {
+      name: 'Iron Man',
+      fly: true
+    },
+  ]
 }
