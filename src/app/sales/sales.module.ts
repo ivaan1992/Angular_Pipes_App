@@ -9,6 +9,11 @@ import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
 import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
 
+// Customized Pipes
+import { UpperPipe } from './pipes/upper.pipe';
+import { FlyPipe } from './pipes/fly.pipe';
+import { OrderPipe } from './pipes/order.pipe';
+
 
 
 @NgModule({
@@ -16,7 +21,10 @@ import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
     NumbersComponent,
     BasicsComponent,
     OrderComponent,
-    NotCommonsComponent
+    NotCommonsComponent,
+    UpperPipe,
+    FlyPipe,
+    OrderPipe,
   ],
   exports: [
     NumbersComponent,
