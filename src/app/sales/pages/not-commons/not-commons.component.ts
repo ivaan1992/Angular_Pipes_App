@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ReplaySubject } from 'rxjs';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-not-commons',
@@ -68,4 +68,15 @@ export class NotCommonsComponent {
       fly: true
     },
   ]
+
+  // Async Pipe
+  myObservable = interval(2000); // 0,1,2,3,4,5,6,
+
+  valorPromesa = new Promise( (resolve, reject) => {
+
+   setTimeout(() => {
+     resolve( 'Promesa resuelta' );
+   }, 3500 );
+
+ });
 }
