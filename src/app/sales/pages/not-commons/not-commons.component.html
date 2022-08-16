@@ -16,9 +16,19 @@
   <div class="col md-6 sm-9">
 
     <p-fieldset legend="i18nSelectPipe" [toggleable]="true">
-      Hola {{ name }}, nos es un placer {{ genre | i18nSelect:invitationMap }}.
-      Queremos decirle que estamos orgullosos de invitarte a nuestro
-      proximo evento de JavaScript.
+
+      <p>
+        Hola {{ name }}, nos es un placer {{ genre | i18nSelect:invitationMap }}.
+        Queremos decirle que estamos orgullosos de invitarte a nuestro
+        proximo evento de JavaScript.
+      </p>
+
+      <button pButton
+      type="button"
+      label="Change Client"
+      (click)="changeClient()">
+      </button>
+
     </p-fieldset>
 
   </div>
@@ -26,7 +36,17 @@
   <div class="col md-6 sm-9">
 
     <p-fieldset legend="i18PluralPipe" [toggleable]="true">
-      Content
+
+      <p>
+        {{ clients.length | i18nPlural:clientsMap }}
+      </p>
+
+      <button pButton
+      (click)="deleteClient()"
+      type="button"
+      class="p-button-danger"
+      label="Remove Client" ></button>
+
     </p-fieldset>
 
   </div>
