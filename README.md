@@ -19,7 +19,7 @@ To get a local copy, run these simple steps in your terminal:
 - Go to the folder where you want to store the project.
 - Clone the repo with this command: 
     ``` 
-    git clone git@github.com:ivaan1992/Country-App.git 
+    git@github.com:ivaan1992/Angular_Pipes_App.git
     ```
 - Once you have clone the repo, run this command: ` ng s -o `
 - If you follow these steps, you can see my project in your browser in the access: `` http://localhost:4200/ ``.
