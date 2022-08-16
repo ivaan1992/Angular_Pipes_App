@@ -42,6 +42,7 @@ export class MenuComponent implements OnInit {
       {
         label: 'My Own Pipes',
         icon: 'pi pi-star',
+        routerLink: 'order'
       }
     ];
   }

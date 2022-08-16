@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
   styleUrls: []
 })
-export class OrderComponent implements OnInit {
+export class OrderComponent {
+ mayus: boolean = true;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  changeText() {
+    this.mayus = !this.mayus;
   }
-
 }
