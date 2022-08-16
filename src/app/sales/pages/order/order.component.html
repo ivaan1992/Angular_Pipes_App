@@ -24,7 +24,7 @@
 
       <button pButton
           icon="pi pi-sort"
-          label="Values"
+          label="Fly"
           class="mr-1 p-button-danger">
       </button>
 
@@ -38,7 +38,7 @@
 
 <div class="grid">
   <div class="col mt-3">
-      <p-table [value]="heroes" responsiveLayout="scroll">
+      <p-table [value]="heroes | order" responsiveLayout="scroll">
         <ng-template pTemplate="header">
             <tr>
                 <th>Name</th>
