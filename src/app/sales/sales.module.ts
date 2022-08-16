@@ -11,6 +11,7 @@ import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
 
 // Customized Pipes
 import { UpperPipe } from './pipes/upper.pipe';
+import { FlyPipe } from './pipes/fly.pipe';
 
 
 
@@ -21,6 +22,7 @@ import { UpperPipe } from './pipes/upper.pipe';
     OrderComponent,
     NotCommonsComponent,
     UpperPipe,
+    FlyPipe
   ],
   exports: [
     NumbersComponent,
